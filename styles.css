@@ -1,3 +1,4 @@
+/* Estilo base */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     text-align: center;
 }
 
+/* Encabezado */
 header {
     background-color: #8b5a2b;
     padding: 20px;
@@ -29,6 +31,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Pie de página */
 footer {
     margin-top: 20px;
     padding: 10px;
@@ -36,14 +39,58 @@ footer {
     color: white;
 }
 
+/* Contenedor general para secciones del inicio */
+.secciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Caja individual de cada sección */
+.seccion {
+    background-color: #ffe0b2;
+    padding: 15px;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+.seccion img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.seccion a {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #5a3e1b;
+    text-decoration: none;
+}
+
+.seccion a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de recetas individuales */
 .recetas {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .receta {
     text-align: center;
+    background-color: #ffe0b2;
+    border-radius: 15px;
+    padding: 10px;
+    width: 220px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
 }
 
 .receta img {
@@ -54,10 +101,11 @@ footer {
 
 .receta a {
     text-decoration: none;
-    color: black;
+    color: #5a3e1b;
     font-weight: bold;
 }
 
+/* Imagen destacada para receta detallada */
 .receta-img {
     width: 100%;
     max-width: 400px;
